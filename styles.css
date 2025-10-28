@@ -1,0 +1,8 @@
+:root { --font-sans-stack: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+
+
+html, body, button, input, textarea {
+    font-family: var(--font-sans-stack);
+}
+
+img.object-cover { object-fit: cover; }

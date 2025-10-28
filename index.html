@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project — Home</title>
+    <meta name="description" content="Landing page template built with Tailwind CSS (CDN)." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="antialiased font-sans text-gray-800 bg-gray-50">
+    <header class="bg-white border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-6 py-4 relative flex items-center">
+      <div class="flex items-center gap-3">
+       <a href="/index.html" class="flex items-center gap-3">
+             <div class="h-12 w-12 rounded-full overflow-hidden border-2 border-gray-300 bg-white flex items-center justify-center">
+            <!-- <img id="siteLogo" src="" alt="/images" class="hidden h-full w-full object-cover" /> -->
+       <div id="logoFallback" class="text-gray-700 font-semibold">@</div>
+              </div>
+              <span class="text-lg font-medium">Your Company</span>
+            </a>
+          </div>
+
+        <nav class="hidden md:block absolute left-1/2 transform -translate-x-1/2">
+          <div class="flex items-center divide-x divide-gray-200 text-gray-700 text-sm">
+            <a href="#" class="px-6 py-2 hover:text-gray-900">Home</a>
+            <a href="#" class="px-6 py-2 hover:text-gray-900">Categories</a>
+            <a href="#" class="px-6 py-2 hover:text-gray-900">Authors</a>
+            <a href="#" class="px-6 py-2 hover:text-gray-900">Shop</a>
+            <a href="#" class="px-6 py-2 hover:text-gray-900">Contact</a>
+          </div>
+        </nav>
+
+        <div class="ml-auto flex items-center gap-4">
+          <div class="hidden md:flex items-center gap-4 text-gray-600">
+            <a href="#" aria-label="Twitter" class="hover:text-gray-900">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 19c7.732 0 11.955-6.405 11.955-11.955 0-.182 0-.363-.012-.543A8.558 8.558 0 0 0 22 4.92a8.29 8.29 0 0 1-2.357.646 4.117 4.117 0 0 0 1.804-2.27 8.224 8.224 0 0 1-2.605.996A4.107 4.107 0 0 0 12.07 7.6a11.65 11.65 0 0 1-8.457-4.287 4.106 4.106 0 0 0 1.27 5.482A4.073 4.073 0 0 1 2.8 8.71v.052a4.107 4.107 0 0 0 3.292 4.025 4.095 4.095 0 0 1-1.085.145c-.266 0-.524-.025-.776-.074a4.108 4.108 0 0 0 3.833 2.85A8.233 8.233 0 0 1 2 17.543a11.616 11.616 0 0 0 6.29 1.84"></path></svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="hover:text-gray-900">
+              <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4" stroke-width="2"></rect><circle cx="12" cy="12" r="3" stroke-width="2"></circle><path d="M17.5 6.5h.01" stroke-width="2"></path></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="hover:text-gray-900">
+              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.88v-6.99H8.5V12h2.02V9.8c0-2 1.2-3.1 3-3.1.87 0 1.78.16 1.78.16v1.96h-1c-1 0-1.32.63-1.32 1.27V12h2.25l-.36 2.89h-1.89v6.99A10 10 0 0 0 22 12"></path></svg>
+            </a>
+          </div>
+
+          <button id="menuBtn" aria-expanded="false" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100">
+            <svg id="menuOpen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+            <svg id="menuClose" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobileMenu" class="md:hidden hidden border-t">
+        <div class="px-6 py-4 flex flex-col gap-2">
+          <a href="#" class="py-3 px-2 rounded hover:bg-gray-50">Home</a>
+          <a href="#" class="py-3 px-2 rounded hover:bg-gray-50">Categories</a>
+          <a href="#" class="py-3 px-2 rounded hover:bg-gray-50">Authors</a>
+          <a href="#" class="py-3 px-2 rounded hover:bg-gray-50">Shop</a>
+          <a href="#" class="py-3 px-2 rounded hover:bg-gray-50">Contact</a>
+          <div class="pt-3 border-t mt-2">
+            <div class="flex items-center justify-center gap-4 py-2">
+              <a href="#" aria-label="Twitter" class="p-2 rounded hover:bg-gray-50 text-gray-700">
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 19c7.732 0 11.955-6.405 11.955-11.955 0-.182 0-.363-.012-.543A8.558 8.558 0 0 0 22 4.92a8.29 8.29 0 0 1-2.357.646 4.117 4.117 0 0 0 1.804-2.27 8.224 8.224 0 0 1-2.605.996A4.107 4.107 0 0 0 12.07 7.6a11.65 11.65 0 0 1-8.457-4.287 4.106 4.106 0 0 0 1.27 5.482A4.073 4.073 0 0 1 2.8 8.71v.052a4.107 4.107 0 0 0 3.292 4.025 4.095 4.095 0 0 1-1.085.145c-.266 0-.524-.025-.776-.074a4.108 4.108 0 0 0 3.833 2.85A8.233 8.233 0 0 1 2 17.543a11.616 11.616 0 0 0 6.29 1.84"></path></svg>
+              </a>
+
+              <a href="#" aria-label="Instagram" class="p-2 rounded hover:bg-gray-50 text-gray-700">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4" stroke-width="2"></rect><circle cx="12" cy="12" r="3" stroke-width="2"></circle><path d="M17.5 6.5h.01" stroke-width="2"></path></svg>
+              </a>
+
+              <a href="#" aria-label="Facebook" class="p-2 rounded hover:bg-gray-50 text-gray-700">
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.88v-6.99H8.5V12h2.02V9.8c0-2 1.2-3.1 3-3.1.87 0 1.78.16 1.78.16v1.96h-1c-1 0-1.32.63-1.32 1.27V12h2.25l-.36 2.89h-1.89v6.99A10 10 0 0 0 22 12"></path></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+  <section class="relative bg-cover bg-center bg-no-repeat h-[600px] flex items-center justify-center text-center text-white"
+    style="background-image: url('/images/banner.jpg');">
+
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+    <div class="relative z-10 max-w-2xl mx-auto px-4">
+      <p class="text-sm uppercase tracking-widest mb-3 text-gray-300">Design</p>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+        10 Tips for Designing a <br /> Professional Wireframe
+      </h1>
+      <p class="text-gray-300 mb-8">
+        Nunc mi tortor, venenatis fermentum ipsum id, gravida lacinia magna.
+        Suspendisse maximus neque at elit consequat aliquet.
+      </p>
+      <a href="#"
+         class="inline-block bg-white text-gray-800 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition">
+        READ MORE
+      </a>
+    </div>
+
+  </section>
+
+      <section id="posts" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid gap-10 md:grid-cols-3">
+          <article class="text-center">
+            <div class="bg-gray-100 rounded-lg h-56 flex items-center justify-center overflow-hidden relative">
+              <img src="images/about.jpg" alt="Post image 1" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="mt-6 text-2xl font-extrabold text-gray-800">How to Overcome Creative Blocks & Find Inspiration</h3>
+            <div class="mt-4 text-sm text-gray-400">Bob Marley · Mar 15, 2022 · 10 min read</div>
+            <p class="mt-6 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </article>
+
+          <article class="text-center">
+            <div class="bg-gray-100 rounded-lg h-56 flex items-center justify-center overflow-hidden relative">
+              <img src="images/about.jpg" alt="Post image 2" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="mt-6 text-2xl font-extrabold text-gray-800">Uses for Everyday Household Items</h3>
+            <div class="mt-4 text-sm text-gray-400">Bob Marley · Feb 18, 2022 · 9 min read</div>
+            <p class="mt-6 text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+          </article>
+
+          <article class="text-center">
+            <div class="bg-gray-100 rounded-lg h-56 flex items-center justify-center overflow-hidden relative">
+              <img src="images/about.jpg" alt="Post image 3" class="w-full h-full object-cover" />
+            </div>
+            <h3 class="mt-6 text-2xl font-extrabold text-gray-800">Spectacular Natural Wonders Everyone Should See</h3>
+            <div class="mt-4 text-sm text-gray-400">John · Mar 18, 2022 · 16 min read</div>
+            <p class="mt-6 text-gray-600">lorem id elementum vehicula, sapien ipsum tincidunt...</p>
+          </article>
+        </div>
+      </section>
+
+  <section id="latest-posts" class="max-w-7xl mx-auto px-6 sm:px-8 py-20 bg-gray-50">
+        <div class="text-center">
+          <h2 class="text-4xl font-extrabold text-gray-800">Latest Posts</h2>
+          <p class="mt-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+
+        <div class="mt-12 grid gap-10 md:grid-cols-3 items-start">
+          <article class="md:col-span-2 relative rounded-lg overflow-hidden">
+            <div class="relative bg-gray-800 h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden">
+              <img src="images/about.jpg" alt="Featured post image" class="absolute inset-0 w-full h-full object-cover object-center opacity-40">
+              <div class="relative z-10 h-full flex flex-col items-center justify-center px-6 sm:px-8 text-center text-white">
+                <p class="uppercase tracking-widest text-sm text-white/80">Books</p>
+                <h3 class="mt-4 text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight">10 Life-Changing Books Everyone Should Read</h3>
+                <p class="mt-6 text-sm text-white/80">Anna Maria Lopez · Mar 15, 2022 · 10 min read</p>
+              </div>
+            </div>
+          </article>
+
+          <aside class="bg-white rounded-lg p-6 shadow mt-6 md:mt-0 md:sticky md:top-28">
+            <h4 class="text-xl font-extrabold text-gray-800">Trending Posts</h4>
+            <ul class="mt-6 space-y-4">
+              <li class="flex items-start gap-4">
+                <img src="images/about.jpg" alt="Thumbnail for How to Enjoy the Journey" class="w-20 h-14 sm:w-24 sm:h-16 rounded-md object-cover bg-gray-100">
+                <div class="flex-1">
+                  <a href="#" class="block font-semibold text-gray-800 hover:underline"> Enjoy the Journey and Reach Your Goals</a>
+                  <div class="mt-2 text-xs text-gray-400">Jul 11, 2022</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <img src="images/about.jpg" alt="Thumbnail for How to Grow Potatoes" class="w-20 h-14 sm:w-24 sm:h-16 rounded-md object-cover bg-gray-100">
+                <div class="flex-1">
+                  <a href="#" class="block font-semibold text-gray-800 hover:underline">How to Grow your business</a>
+                  <div class="mt-2 text-xs text-gray-400">Dec 3, 2022</div>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <img src="images/about.jpg" alt="Thumbnail for Dishwasher Detergents" class="w-20 h-14 sm:w-24 sm:h-16 rounded-md object-cover bg-gray-100">
+                <div class="flex-1">
+                  <a href="#" class="block font-semibold text-gray-800 hover:underline">Dishwasher Detergents: What You Need to Know</a>
+                  <div class="mt-2 text-xs text-gray-400">Apr 6, 2022</div>
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="mt-12 md:grid md:grid-cols-3 md:gap-10">
+          <div class="md:col-span-2 space-y-10">
+            <article class="md:flex md:items-start">
+              <div class="md:w-1/3">
+                <img src="images/about.jpg" alt="Movie Night In" class="w-full h-40 sm:h-56 object-cover rounded-lg bg-gray-100">
+              </div>
+              <div class="md:ml-8 mt-6 md:mt-0 md:w-2/3">
+                <p class="text-sm text-gray-400">Entertainment · 12 min read</p>
+                <h3 class="mt-2 text-2xl font-extrabold text-gray-800">Movie Night In: How to Create Home Theater Magic</h3>
+                <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas accusamus officia, ex dolorem veritatis saepe amet obcaecati repellat necessitatibus!</p>
+                <p class="mt-4 text-sm text-gray-400">Carol Francis · Jun 11, 2022</p>
+              </div>
+            </article>
+
+            <article class="md:flex md:items-start">
+              <div class="md:w-1/3">
+                <img src="images/about.jpg" alt="Book Clubs" class="w-full h-40 sm:h-56 object-cover rounded-lg bg-gray-100">
+              </div>
+              <div class="md:ml-8 mt-6 md:mt-0 md:w-2/3">
+                <p class="text-sm text-gray-400">Books · 11 min read</p>
+                <h3 class="mt-2 text-2xl font-extrabold text-gray-800">Book Clubs: Where to Find Like-Minded Readers</h3>
+                <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas accusamus officia, ex dolorem veritatis saepe amet obcaecati repellat necessitatibus!</p>
+                <p class="mt-4 text-sm text-gray-400">Sarah McKenzie · Oct 11, 2022</p>
+              </div>
+            </article>
+
+            <div class="flex justify-center">
+              <button class="mt-10 bg-white text-gray-800 font-medium px-8 py-3 rounded-full shadow">LOAD MORE POSTS</button>
+            </div>
+          </div>
+          <aside class="mt-10 md:mt-0">
+            <div class="bg-white rounded-lg p-6 shadow">
+              <div class="w-full h-48 sm:h-64 bg-gray-100 rounded border border-gray-200 flex items-center justify-center text-gray-400"></div>
+              <div class="mt-4 text-center text-sm text-gray-400">Advertisement</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="newest" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="mb-8">
+          <div class="flex items-center gap-4">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800">Newest from</h2>
+            <a href="#" class="text-4xl md:text-5xl font-extrabold text-gray-800 underline decoration-2 underline-offset-4" aria-label="Open Health & Lifestyle category">Health & Lifestyle</a>
+            <button aria-label="open category" class="ml-2 text-gray-600 hover:text-gray-800">
+              <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd" /></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="group bg-white transition transform hover:-translate-y-1 hover:shadow-lg">
+            <div class="bg-gray-100 rounded-xl h-48 sm:h-56 mb-4 overflow-hidden">
+              <img src="images/about.jpg" alt="Healthcare" class="w-full h-full object-cover">
+            </div>
+            <div class="text-xs text-gray-400 uppercase tracking-wide">Healthcare · 19 min read</div>
+            <h3 class="mt-3 text-lg md:text-xl font-extrabold text-gray-800 leading-tight">Proven Health & Lifestyle Hacks That Will Boost Your Energy at Home and Work</h3>
+            <p class="mt-3 text-gray-600 text-sm leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas accusamus officia, ex dolorem veritatis saepe amet obcaecati repellat necessitatibus!</p>
+            <div class="mt-4 text-sm text-gray-400">John Alvarez · Feb 18, 2022</div>
+          </article>
+
+          <article class="group bg-white transition transform hover:-translate-y-1 hover:shadow-lg">
+            <div class="bg-gray-100 rounded-xl h-48 sm:h-56 mb-4 overflow-hidden">
+              <img src="images/about.jpg" alt="Wellness" class="w-full h-full object-cover">
+            </div>
+            <div class="text-xs text-gray-400 uppercase tracking-wide">Wellness · 11 min read</div>
+            <h3 class="mt-3 text-lg md:text-xl font-extrabold text-gray-800 leading-tight">The Role of Positive Thinking in Maintaining Good Health</h3>
+            <p class="mt-3 text-gray-600 text-sm leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, architecto!</p>
+            <div class="mt-4 text-sm text-gray-400">Sarah McKenzie · Jun 11, 2022</div>
+          </article>
+
+          <article class="group bg-white transition transform hover:-translate-y-1 hover:shadow-lg">
+            <div class="bg-gray-100 rounded-xl h-48 sm:h-56 mb-4 overflow-hidden">
+              <img src="images/about.jpg" alt="Food" class="w-full h-full object-cover">
+            </div>
+            <div class="text-xs text-gray-400 uppercase tracking-wide">Food · 8 min read</div>
+            <h3 class="mt-3 text-lg md:text-xl font-extrabold text-gray-800 leading-tight">7 Foods that Fight Inflammation and Enhance Overall Health</h3>
+            <p class="mt-3 text-gray-600 text-sm leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione libero et laborum itaque culpa.</p>
+            <div class="mt-4 text-sm text-gray-400">Anna Maria Lopez · Mar 8, 2022</div>
+          </article>
+
+          <article class="group bg-white transition transform hover:-translate-y-1 hover:shadow-lg">
+            <div class="bg-gray-100 rounded-xl h-48 sm:h-56 mb-4 overflow-hidden">
+              <img src="images/about.jpg" alt="Lifestyle" class="w-full h-full object-cover">
+            </div>
+            <div class="text-xs text-gray-400 uppercase tracking-wide">Lifestyle · 19 min read</div>
+            <h3 class="mt-3 text-lg md:text-xl font-extrabold text-gray-800 leading-tight">How to Find Fulfillment and Happiness Through a Minimalist Lifestyle</h3>
+            <p class="mt-3 text-gray-600 text-sm leading-relaxed">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, deserunt?</p>
+            <div class="mt-4 text-sm text-gray-400">Bob Jones · Apr 21, 2022</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="newsletter" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="bg-gray-50 rounded-2xl p-8 md:p-16">
+          <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">Subscribe to our Newsletter</h2>
+            <p class="mt-4 text-gray-600">Get the latest product updates, company news, and special offers delivered right to your inbox.</p>
+
+            <form class="mt-8 sm:flex sm:items-center sm:justify-center gap-4" action="#" method="post">
+              <label for="email" class="sr-only">Email address</label>
+              <input id="email" name="email" type="email" required placeholder="Enter your email" class="w-full sm:w-2/3 md:w-3/5 px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary-100" />
+              <button type="submit" class="mt-4 sm:mt-0 inline-block bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold shadow hover:opacity-95">SUBSCRIBE</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-50 border-t">
+      <div class="max-w-7xl mx-auto px-6 py-12 relative">
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top" class="absolute right-6 -top-5 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:opacity-95">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+        </button>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="h-10 w-10 flex items-center justify-center rounded-full border-2 border-gray-300 text-gray-700 font-semibold">@</div>
+              <span class="text-lg font-semibold">Your Company</span>
+            </div>
+            <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptas accusamus officia, ex dolorem veritatis saepe amet obcaecati repellat necessitatibus!</p>
+            <div class="text-sm text-gray-500">© 2022 Your Company. All rights reserved. <a href="#" class="underline">Terms of Service</a> · <a href="#" class="underline">Privacy Policy</a></div>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-gray-800">Tags</h4>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="text-xs bg-white border border-gray-200 rounded-full px-3 py-1 text-gray-600">HEALTH</span>
+              <span class="text-xs bg-white border border-gray-200 rounded-full px-3 py-1 text-gray-600">LIFESTYLE</span>
+              <span class="text-xs bg-white border border-gray-200 rounded-full px-3 py-1 text-gray-600">SOCIAL</span>
+              <span class="text-xs bg-white border border-gray-200 rounded-full px-3 py-1 text-gray-600">ENTERTAINMENT</span>
+              <span class="text-xs bg-white border border-gray-200 rounded-full px-3 py-1 text-gray-600">NEWS</span>
+              <span class="text-xs bg-white border border-gray-200 rounded-full px-3 py-1 text-gray-600">BOOKS</span>
+              <span class="text-xs bg-white border border-gray-200 rounded-full px-3 py-1 text-gray-600">DESIGN</span>
+              <span class="text-xs bg-white border border-gray-200 rounded-full px-3 py-1 text-gray-600">GADGETS</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-gray-800">Social</h4>
+            <ul class="mt-4 space-y-3 text-gray-600">
+        
+                <a href="#" class="hover:underline">Facebook</a>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="h-5 w-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4" stroke-width="2"></rect><circle cx="12" cy="12" r="3" stroke-width="2"></circle></svg>
+                <a href="#" class="hover:underline">Instagram</a>
+              </li>
+              <li class="flex items-center gap-3">
+                <svg class="h-5 w-5 text-gray-600" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg>
+                <a href="#" class="hover:underline">Youtube</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-gray-800">About</h4>
+            <ul class="mt-4 space-y-2 text-sm text-gray-600">
+              <li><a href="#" class="hover:underline">Shop</a></li>
+              <li><a href="#" class="hover:underline">Authors</a></li>
+              <li><a href="#" class="hover:underline">Sitemap</a></li>
+              <li><a href="#" class="hover:underline">About us</a></li>
+              <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
