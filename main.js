@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       fallback.classList.remove('hidden');
     }
   }
-  window.setLogo = setLogo;
-  try { setLogo(SITE_LOGO_URL); } catch (e) { /* ignore */ }
+
  menuBtn.addEventListener('click', function () {
   const open = mobileMenu.classList.toggle('hidden');
    menuOpen.classList.toggle('hidden');
